@@ -4,11 +4,20 @@ import mongoose from "mongoose";
 import userRouter from "./routes/user.js";
 import recipeRouter from "./routes/recipe.js";
 import bodyParser from "express";
+import cors from "cors";
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(bodyParser.json);
+app.use(bodyParser.json());
+
+app.use(
+  cors({
+    origin: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 // userRouter
 app.use("/api", userRouter);
