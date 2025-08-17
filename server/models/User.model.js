@@ -16,11 +16,13 @@ const userSchema = new mongoose.Schema(
       required: [true, "password is required"],
     },
     address: {
-      type: Array,
+      type: String,
+      required: [true, "address is required"],
     },
+
     phone: {
       type: String,
-      required: [true, "phone number is require"],
+      required: [true, "phone number is required"],
     },
     usertype: {
       type: String,
