@@ -15,27 +15,26 @@ const Footer = () => {
         <div className="absolute top-0 left-1/4 w-64 h-64 bg-gradient-to-r from-red-500/10 to-orange-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-r from-orange-500/10 to-yellow-500/10 rounded-full blur-3xl"></div>
       </div>
+
       <div className="relative">
-        {/* Bottom Section */}
-        <div className="container mx-auto px-6 py-8 space-y-6 text-center lg:text-left">
+        <div className="container mx-auto px-6 py-8 flex flex-col items-center text-center space-y-6">
           {/* Copyright */}
-          <div>
-            <p className="text-gray-300 flex items-center justify-center gap-2">
-              © 2025 TasteTrove. Made with
-              <Heart size={16} className="text-red-400 fill-current" />
-              in India. All rights reserved.
+          <div className="text-gray-300">
+            {/* Desktop: one line, Mobile: break into two */}
+            <p className="hidden sm:block">© 2025 TasteTrove. Made within India. All rights reserved.</p>
+            <p className="block sm:hidden">
+              © 2025 TasteTrove. <br />
+              Made within India. All rights reserved.
             </p>
           </div>
+
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-6">
-            <span className="text-gray-300">Follow us:</span>
-            <div className="flex gap-4">
-              {socialLinks.map((social) => (
-                <a key={social.name} href={social.href} className={`w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-white/20 ${social.color}`} aria-label={social.name}>
-                  {social.icon}
-                </a>
-              ))}
-            </div>
+          <div className="flex gap-4">
+            {socialLinks.map((social) => (
+              <a key={social.name} href={social.href} className={`w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-gray-600 flex items-center justify-center text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-white/20 ${social.color}`} aria-label={social.name}>
+                {social.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>
