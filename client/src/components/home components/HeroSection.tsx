@@ -9,7 +9,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-20">
+    <section className="relative overflow-hidden pt-12 pb-0 sm:pb-20">
       <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-orange-500/10" />
       <div className="container mx-auto px-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -19,16 +19,16 @@ const HeroSection = () => {
             </h1>
             <p className="text-xl text-gray-600 mt-6 max-w-lg">Discover amazing food from the best local restaurants. Order now and get it delivered to your doorstep in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to={"/foods"} className="group bg-gradient-to-r from-red-500 to-orange-400 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+              <Link to={"/foods"} className="group bg-gradient-to-r from-red-500 to-orange-400 text-white px-8 py-4 rounded-xl font-semibold text-lg w-fit hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 Order Now
                 <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Link>
-              <button onClick={demoInfo} className="cursor-pointer flex items-center gap-3 text-gray-700 px-8 py-4 rounded-xl border-2 border-gray-200 hover:border-red-300 backdrop-blur-sm bg-white/80 hover:bg-white/90 transition-all duration-300">
+              <button onClick={demoInfo} className="cursor-pointer flex items-center gap-3 text-gray-700 px-8 py-4 rounded-xl border-2 border-gray-200 w-fit hover:border-red-300 backdrop-blur-sm bg-white/80 hover:bg-white/90 transition-all duration-300">
                 <Play size={20} />
                 Watch Demo
               </button>
             </div>
-            <div className="flex items-center gap-8 pt-4">
+            <div className="hidden sm:flex items-center gap-8 pt-4">
               <div className="text-center">
                 <div className="text-3xl font-bold text-gray-900">500+</div>
                 <div className="text-gray-600">Restaurants</div>
