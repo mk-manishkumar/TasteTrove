@@ -9,15 +9,15 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pt-12 pb-0 sm:pb-20">
+    <section className="relative overflow-hidden pt-25 pb-0 sm:pb-20">
       <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-orange-500/10" />
       <div className="container mx-auto px-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Delicious Food <span className="block bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text text-transparent">Delivered Fast</span>
             </h1>
-            <p className="text-xl text-gray-600 mt-6 max-w-lg">Discover amazing food from the best local restaurants. Order now and get it delivered to your doorstep in minutes.</p>
+            <p className="text-md sm:text-xl text-gray-600 mt-6 max-w-lg">Discover amazing food from the best local restaurants. Order now and get it delivered to your doorstep in minutes.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to={"/foods"} className="group bg-gradient-to-r from-red-500 to-orange-400 text-white px-8 py-4 rounded-xl font-semibold text-lg w-fit hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                 Order Now
