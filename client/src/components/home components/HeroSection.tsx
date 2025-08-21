@@ -9,7 +9,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden pt-25 pb-0 sm:pb-20">
+    <section className="relative overflow-hidden pt-90 md:pt-25 pb-0 sm:pb-20">
       <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 to-orange-500/10" />
       <div className="container mx-auto px-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

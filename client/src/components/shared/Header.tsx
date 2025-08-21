@@ -85,8 +85,8 @@ const Header = () => {
         )}
       </header>
 
-      {/* Search bar for mobile (below nav) */}
-      <div className="px-6 pt-25 pb-8 md:hidden border-b bg-white relative flex items-center">
+      {/* Search bar for mobile */}
+      <div className="px-6 pt-24 pb-8 fixed z-50 w-full md:hidden border-b bg-white  flex items-center">
         <Input type="text" placeholder="Search Foods, Restaurants..." className="pr-10" />
         <Search className="absolute right-9 text-gray-500 cursor-pointer hover:text-red-500 transition" size={18} />
       </div>

@@ -272,7 +272,7 @@ const Restaurant = () => {
     <div className="min-h-screen bg-gray-50">
       <Header/>
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-red-500 to-orange-400 text-white py-16">
+      <div className="bg-gradient-to-r from-red-500 to-orange-400 text-white pt-40">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover Amazing Restaurants</h1>
